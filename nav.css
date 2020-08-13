@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+
+}
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+  
+}
+
+/* typography */
+
+nav {
+  text-align: center;
+  background-color: rgba(245, 245, 245, 0.918);
+}
+
+.title h1 {
+  font-family: 'Lora', serif;
+  font-size: 2rem;
+  font-weight: lighter;
+  
+  color:#143774;
+}
+
+.title p {
+  font-size: 0.85rem;
+  color: #2ea3e2;
+  text-transform: uppercase;
+  font-weight: 600;
+
+  letter-spacing: 0.1em;
+
+}
+
+li a{
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: bold;
+  letter-spacing: 0.15em;
+
+  color: #707070;
+}
+
+.active {
+  padding-bottom: 0.3em;
+  border-bottom: violet 2px solid;
+  cursor: default;
+}
+
+/* layout */
+
+nav {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ margin-bottom: 3em;
+
+}
+
+.title {
+  min-width: 30%;
+  margin: 3em 0;
+  text-align: right;
+}
+.nav-links {
+  display: flex;
+  min-width: 40%;
+  justify-content: center;
+}
+
+li {
+  margin: 0 1.2em;
+}
+
+@media (max-width:1000px) {
+  nav {
+    flex-direction: column;
+   }
+
+   .title {
+    margin-top: 3em;
+  }
+
+  .nav-links {
+    margin-top: 0.5em;
+    margin-bottom: 3em;
+  }
+}
+
+@media (max-width:600px) {
+  .nav-links {
+    flex-direction: column;
+    margin-top: -1em;
+  }
+
+  li {
+    margin-bottom: 1em;
+  }
+
+  li a {
+    font-size: 1.2rem;
+    font-weight: bolder;
+  }
+}
